@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import LogoTitle from '../../assets/images/logo-t.png';
+import Loader from 'react-loaders'
 import { Link, NavLink } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
@@ -15,6 +16,7 @@ const Home = () => {
         }, 4000)
     }, [])
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -33,6 +35,8 @@ const Home = () => {
                 <Link to = "/contact" className='flat-button' >CONTACT ME</Link>
             </div>
         </div>
+        <Loader type = "pacman" />
+        </>
         
     );
 }
