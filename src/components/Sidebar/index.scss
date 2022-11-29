@@ -83,6 +83,18 @@
             }
         }
 
+        a.certificate-link {
+            &:after {
+                content: 'COURSES';
+            }
+        }
+
+        a.project-link {
+            &:after {
+                content: 'PROJECTS';
+            }
+        }
+
         a.contact-link {
             &:after {
                 content: 'CONTACT';
